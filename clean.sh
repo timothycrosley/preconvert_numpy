@@ -1,4 +1,4 @@
 #!/bin/bash
 
-isort --recursive preconvert/
-black preconvert/ -l 100
+isort --recursive preconvert_numpy/
+black preconvert_numpy/ -l 100
