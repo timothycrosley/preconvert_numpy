@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+mypy = "*"
+isort = "*"
+black = "*"
+flake8 = "*"
+safety = "*"
+bandit = "*"
+vulture = "*"
+flake8-bugbear = "*"
+pep8-naming = "*"
+
+[packages]
+preconvert = "*"
+
+[pipenv]
+allow_prereleases = true
