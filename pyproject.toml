@@ -3,10 +3,10 @@ requires = ["flit"]
 build-backend = "flit.buildapi"
 
 [tool.flit.metadata]
-module = "preconvert"
+module = "preconvert_numpy"
 author = "Timothy Edmund Crosley"
 author-email = "timothy.crosley@gmail.com"
-home-page = "https://github.com/timothycrosley/preconvert"
+home-page = "https://github.com/timothycrosley/preconvert_numpy"
 requires-python=">=3.5"
 description-file="README.md"
 classifiers=[
@@ -15,8 +15,15 @@ classifiers=[
     "Programming Language :: Python :: 3",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
+requires = [
+    "preconvert >=0.2",
+    "numpy"
+]
 
 [tool.flit.metadata.requires-extra]
 simplejson = ["simplejson"]
 msgpack = ["msgpack"]
 bson = ["pymongo"]
+
+[tool.flit.entrypoints."preconvert.converters"]
+numpy = "preconvert:converters"
