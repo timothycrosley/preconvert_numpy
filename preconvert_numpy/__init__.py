@@ -1,6 +1,6 @@
 """Preconverts common numpy types to their serializable (jsonifiable, msgpackable, etc...) form.
 A plugin for the preconvert Python library.
 """
-import converters
+from preconvert_numpy import converters
 
-__version__ = "0.0.2"
+__version__ = "0.0.3"

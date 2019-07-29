@@ -16,7 +16,7 @@ classifiers=[
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 requires = [
-    "preconvert >=0.2",
+    "preconvert >=0.0.2",
     "numpy"
 ]
 
@@ -26,4 +26,4 @@ msgpack = ["msgpack"]
 bson = ["pymongo"]
 
 [tool.flit.entrypoints."preconvert.converters"]
-numpy = "preconvert:converters"
+numpy = "preconvert_numpy:converters"
